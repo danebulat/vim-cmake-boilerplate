@@ -1,0 +1,2 @@
+#define VERSION_MAJOR @Boilerplate_VERSION_MAJOR@
+#define VERSION_MINOR @Boilerplate_VERSION_MINOR@
