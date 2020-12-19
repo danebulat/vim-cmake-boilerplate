@@ -60,10 +60,10 @@ set(msvc_cxx "$<COMPILE_LANG_AND_ID:CXX,MSVC>")
 set(gcc_flags "-Wall;-Wextra;-Wshadow;-Wshadow;-Wformat=2")
 set(msvc_flags "-W3")
 
-target_compile_options(Boilerplate PUBLIC
+target_compile_options(Boilerplate PRIVATE
    "$<${gcc_like_cxx}:$<BUILD_INTERFACE:${gcc_flags}>>"
    "$<${msvc_cxx}: $<BUILD_INTERFACE:${msvc_flags}>>")
 
-target_compile_options(interp PUBLIC
+target_compile_options(interp PRIVATE
    "$<${gcc_like_cxx}:$<BUILD_INTERFACE:${gcc_flags}>>"
    "$<${msvc_cxx}: $<BUILD_INTERFACE:${msvc_flags}>>")

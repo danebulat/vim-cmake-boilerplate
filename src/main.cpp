@@ -6,7 +6,8 @@
 int main(int argc, char* argv[]) 
 {
     // output program location and version
-    printf("Running: %s\nVersion: %i.%i\n\n", argv[argc-argc],
+    printf("Running: %s\nVersion: %i.%i\n\n",
+        argv[argc-argc],
         VERSION_MAJOR, VERSION_MINOR);
 
     float t = 0.0f;     // elapsed time
@@ -31,4 +32,4 @@ int main(int argc, char* argv[])
     printf("\n-> Simulation finished...\n");
 
     return 0;
-} 
+}
